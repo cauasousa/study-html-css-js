@@ -1,0 +1,8 @@
+    
+    <header></header> - Cabeçalho do site
+    <nav></nav> - Seção de Navegação (navbar)
+    <main></main> - Conteúdo Principal do site
+    <section></section> - Seções de conteúdos
+    <article></article> - Conteúdo independente que que faz sentido por si só
+    <aside></aside> - Barra lateral com os links relacionados
+    <footer></footer> - Rodapé do Site

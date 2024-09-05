@@ -1,0 +1,17 @@
+    
+    <h1></h1> - Títulos
+    <hr> - Linha
+    <br> - Quebra Linha
+    <ul></ul> - Lista desordenada
+    <li></li> - Item da Lista
+    <ol></ol> - Lista Ordenada
+    <a href="URL" target="_blank"></a> - Associa um link, o black abrir em outra página
+    <b></b> - Negrito
+    <strong></strong> - Negrito (ênfase)
+    <u></u> - sunlinhado
+    <i></i> - Intálico
+    <small></small> - Texto pequeno
+    <del></del> - Riscado (deletado)
+    <sup></sup> - Superior (ex: número exponencial)
+    <sub></sub> - Inferior
+    <mark></mark> - Marcação (destaca texto)

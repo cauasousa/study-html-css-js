@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+body{
+    margin: 0px;
+    background-color: var(--color-background)
+}
+
+:root {
+    --color-background: #F2E7DC;
+    --color-primary: #027373;
+    --color-secondary: #038C7F;
+    --color-accent: #A9D9D0;
+    --color-text: #0D0D0D;
+}
+
+
+header{
+    background: var(--color-background);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+
+.spacer {
+    flex-grow: 1;
+}
+
+header h1 { 
+
+    color: var(--color-text);
+    margin-left: 5%;
+}
+
+#nav-header {
+    
+    align-self: center;
+
+}
+
+.nav-opc {
+
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--color-text);
+    border: 1px solid var(--color-background);
+    align-self: center;
+    padding: 11px;
+    margin: 10px;
+
+}
+
+#nav-opc1{
+
+    display: inline-block;
+    margin: 0px 30px 0px 0px;
+    align-items: center;
+}
+
+#nav-opc2{
+    
+    margin: 0px 30px 0px 0px;
+
+}
+
+#nav-opc3{
+    
+    margin: 0px 30px 0px 0px;
+
+}
+
+#nav-opc4{
+    
+    margin: 0px 80px 0px 0px;
+
+}
+#nav-opc1:hover, 
+#nav-opc2:hover, 
+#nav-opc3:hover, 
+#nav-opc4:hover {
+
+    background-color:var(--color-text);
+    text-decoration: underline;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    
+
+}
+
+
+
+/* ################################################## */
+/* ################# TELA INICIAL ################### */
+#home {
+    display: flex;
+    background-color: var(--color-text);
+    max-height: 500px;
+    padding: 2% 5% 5% 5%;
+    height: 100vh;
+
+}
+
+.img-home {
+    
+    padding: 5%;
+    max-width:500px;
+
+}
+
+#home h2 {
+    align-self: center;
+    color: white;
+    /* margin-left: 40px; */
+    /* padding: 30px 30px 0px 0px; */
+    font-size: 55px;
+}
+
+#home p{
+    color: white;
+    align-items: center;
+    align-self: center;
+    font-size: 18px;
+    padding: 5px 15px 15px 0px;
+    text-align: justify;
+}
+
+#home b {
+    color: var(--color-secondary);
+    font-weight: 900;
+}
+
+/* ################################################ */
+/* ################# TELA SOBRE NÓS ################### */
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.libre-baskerville-bold {
+font-family: "Libre Baskerville", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+font-family: "Libre Baskerville", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+
+#about {
+    padding: 3% 5% 2% 5%;
+    font-size: 18px;
+    color: var(--color-text);
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+#about h2 {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.div-about {
+    display: flex;
+    column-gap: 15px;
+    overflow: auto;
+    /* width: 100%; */
+    height: 200px;
+}
+
+.box-swic {
+    display: inline-block;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    /* flex-wrap: 1; */
+    width: 330px;
+    color: var(--color-background);
+    background-color: var(--color-text);
+    padding: 2%;
+    border: 1px solid var(--color-text);
+    border-radius: 20px;
+    /* max-height: 100px; */
+    box-shadow: 0.1em 0.1em 0.5em -0.1em gray;
+}
+
+#img1-swic{
+
+    background: url("../img/pexels-jplenio.jpg");
+    /* width: 100%; */
+    /* background-position: 5px 50px; */
+    background-size: cover;
+}
+
+.box-swic:hover{
+    width: 335px;
+    /* padding: 3%; */
+
+    box-shadow: 0.4em 0.4em 1em -0.2em gray;
+}
+
+/* ################################################ */
+/* ################### SERVIÇOS ################### */
+
+#services {
+
+    padding: 3% 5% 2% 5%;
+
+}
+
+#services h2 {
+    font-size: 22px;
+    text-align: justify;
+    
+}
+
+#div-price{
+    display: flex;
+}
+
+.box-price {
+    border: 1px solid #0d8880;
+    margin: 10px 5px;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+audio{ 
+    display: none;
+}

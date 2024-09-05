@@ -1,0 +1,74 @@
+lorem de imagem: "https://picsum.photos/200/200"
+li.dropdown  li com dropdown
+ 
+.botao {
+    text-decoration: none; TIRA O TRACEJADO
+}
+
+.botao:hover {
+
+}
+
+.test {
+
+    max-width: 800px;
+
+}
+
+
+Para imagem
+background: url('path');
+background-size: cover;
+opacity: 0.0 até 1.0     conceito de visibilidade de cor
+
+
+.texto {
+    text-align: justify;
+    text-transform: uppercase; formato das letras, a primeira maiuscula, todas maiuscula
+    text-indent: 80px; deixa o espaçmento de parágrafo, tab
+    letter-spacing: 5px; espaçamento entre letras
+    line-heigth: 10px; espaçamento entre linhas
+
+}
+
+essa propriedade só vai funcionar quando tiver a tag 'a' e a classe 'botao1'
+a.botao1 {
+
+}
+
+cursor: mouse
+
+inline  -- ele fica organizado em formato de linha. Obs.: algumas propriedades não funciona no inline. width, ...
+block   -- ele fica organizado em formato de coluna
+inline-block -- ele fica organizado em formato de linha, porém usa propriedades do block, aceitando algumas funcionalidades de width
+
+display:     ele oculta da tela, não ocupa espaço 
+visibility: hidden;      ele oculta da tela, porém continua ocupando espaço 
+
+
+{
+    relative é em relação a si mesmo
+    absolute é em relação ao seu ancestral mais próximo
+    fixed is positioned relative to the viewport
+    sticky é gruda no ancestral mais próximo, usado no scrool da tela is positioned based on the user's scroll position
+
+    position: relative;  absolute;   sticky;         
+    left:40px;       - variando a posição
+    z-index:4;     em qual camada ele estar, tipo no canvas a posição um em cima do outro
+
+}
+
+
+Propriedade Overflow
+hidden -> oculta o conteúdo que passou da tela
+scroll -> cria o scroll idenpendente se vai usar ou não
+visible -> deixa visivel mesmo passando por cima de outros  (padrão)
+auto -> ele é o scroll só quando for necessário
+
+
+Propriedade FLOAT
+è parecido quando vai colocar uma imagem no word que do lado contém texto
+Float: left ... vai colocar o conteúdo(ex.: imagem) no lado esquerdo
+clear:both; -> esse parâmetro ele meio que diz que apartir daquele elemento vai pular o float e colocar o restante do conteúdo em baixo
+Interessante que ele tem preferência pra colocar esse elemento primeiro, 
+

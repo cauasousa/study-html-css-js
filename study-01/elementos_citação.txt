@@ -1,0 +1,7 @@
+    
+    <abbr title="Mouse estar em cima"></abbr> - Abreviatura (A palavra contém um texto quando colocar o mouse)
+    <address></address> - Colocar Endereços
+    O filme <cite>Titanic</cite> - Uma citação de uma obra
+    <q></q> - Citação curta que alguém falou com ""
+    <blockquote></blockquote> - Citação que dar uma espaçamento da margem
+    <bdo dir="ltr" dir="rtl"></bdo> - Inverte a frase ou não
