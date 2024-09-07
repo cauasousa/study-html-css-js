@@ -1,4 +1,17 @@
 lorem de imagem: "https://picsum.photos/200/200"
+imagem feitas -> https://undraw.co/search 
+paleta de cores -> https://color.adobe.com/explore
+icone -> https://www.flaticon.com/
+joguinho -> https://flexboxfroggy.com/#pt-br
+
+
+ESPECIFICIDADE NO CSS,    NO HTML O CSS DIRETO VALE MAIS
+ID 
+TAG.CLASS
+.CLASS 
+TAG 
+
+
 li.dropdown  li com dropdown
  
 .botao {
