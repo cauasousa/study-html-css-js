@@ -13,6 +13,55 @@ body{
     --color-text: #0D0D0D;
 }
 
+.central{
+    display: none;
+    visibility: hidden;
+    margin: 0px 20px 0px 0px;
+    align-self: center;
+   
+}
+
+.menu img{
+    padding: 5px;
+    margin: 0;
+    align-items: center;
+}
+
+.menu:hover #img-context{
+    /* border-radius: 25px; */
+    background: rgb(217, 217, 217);
+    opacity: 70%;
+}
+
+.menu:hover ~ .nav , .nav:hover{
+    display: block;
+}
+
+.nav{
+
+    display: none;
+    position: absolute;
+    right: 20px;
+    /* top: 0; */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+
+.nav-context a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-context {
+    padding: 14px 16px;
+    background: rgb(44, 44, 44);
+}
+
+li:hover {
+    background: rgb(66, 66, 66);
+}
 
 header{
     background: var(--cor-default);
@@ -262,6 +311,7 @@ font-style: italic;
 .button-busy {
     width: 150px;
     background: black;
+    color: white;
     border-radius: 20px;
     height: 50px;
     display: flex;
@@ -287,7 +337,7 @@ font-style: italic;
 .button-busy:hover{
     -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
-    box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
 }
 
 audio{ 
@@ -309,32 +359,375 @@ audio{
 table{
     border-collapse: collapse;
     border: 1px solid rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 11px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 11px -8px rgba(0,0,0,1);
+    box-shadow: 0px 0px 11px -8px rgba(0,0,0,1);
 }
 
 .line0 {
-    background: var(--color-secondary);
-    border-color: var(--color-secondary);
+    background: #0D0D0D;
+    border-color: #0D0D0D;
+    color: #ffffff;
+    padding: 5px;
 }
 
 .line1 {
-    background: var(--cor-default);
-    border-color: var(--cor-default);
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 .line2 {
-    background: var(--color-accent);
-    border-color: var(--color-accent);
+    background: #36BFB1;
+    border-color: #36BFB1;
 }
 
-.line1:hover{
-    background: var(--cor-default);
+
+
+tr:hover .line1 {
+    background: #591C21;
+    border-color: #591C21;
+    color: #ffffff;
+}
+
+tr:hover .line2 {
+    background: #591C21;
+    border-color: #591C21;
+    color: #ffffff;
+}
+
+
+
+tfoot th {
+    text-align: right;
+}
+
+#th-ri {
+    text-align: center;
+}
+
+/* ################################################## */
+/* ################## SUPPORT ####################### */
+
+.support {
+    background: black;
+    position: relative;
+}
+
+.context-img {
+    display: inline-block;
+    background: url("https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg");
+    background-size: cover;
+    opacity: 0.4;
+    width: 100%;    
+    height: 350px;
+    z-index: 1;
+}
+
+.context-img-centralizar{
+    color: white;
+    display: flex;
+    justify-content: center;    
     
-    border-color: var(--cor-default);
 }
 
-.line2:hover {
-
-    background: #81d2c3;
-    border-color: #81d2c3;
+.context-img-centralizar h3 {
+    position: absolute;
+    top: 20%;
+    z-index: 999;
+    font-size: 32px;
+    font-weight: 900;
 }
 
+.context-img-centralizar p {
+    
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    font-weight: 100;
+}
+
+
+.context-img-centralizar a {
+    
+    position: absolute;
+    bottom: 10%;
+    z-index: 999;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    border: 1px solid var(--color-accent);
+    border-radius: 12px;
+    padding: 8px 15px;
+
+}
+
+.context-img-centralizar a:hover{
+    text-shadow: 0px 1px 20px var(--color-accent);
+    text-decoration-line: underline;
+    -webkit-box-shadow: 0px 0px 11px -2px rgba(169,217,208,1);
+    -moz-box-shadow: 0px 0px 11px -2px rgba(169,217,208,1);
+    box-shadow: 0px 0px 11px -2px rgba(169,217,208,1);
+}
+
+
+/* ####################################################### */
+/* ###################### FORM ########################### */
+#display-screen {
+    display: flex;
+    padding: 3% 5% 2% 5%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#size-screen-half {
+    padding: 20px;
+    width: 50%;
+
+    /* text-align: center; */
+    /* background: #c7acac; */
+    /* border: 1px solid #027373; */
+}
+
+.box-form {
+    /* list-style-type: circle; */
+    padding-top: 25px;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.font-size-title {
+    font-size: 40px;
+    padding: 0;
+}
+
+#input-context {
+    display: flex;
+    justify-content: center;
+}
+
+#input-context input {
+    border: 0;
+    font-size: 18px;
+}
+
+/* ################################################## */
+/* ################################################## */
+
+footer {
+    background: var(--color-text);
+    display: flex;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+}
+footer nav {
+    display: flex;
+    justify-content: center;
+    /* align-self: center; */
+    /* text-align: center; */
+    width: 50%;
+}
+
+footer nav ul{
+    display: flex;
+}
+
+footer nav ul  li a{
+    display: flex;
+    list-style-type: none;
+    /* text-decoration-line: underline; */
+
+    color: blue;
+    
+    /* text-decoration: none; */
+    padding-left: 20px;
+}
+
+
+/* ######################################################### */
+/* ###################### Media Queries ####################### */
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 900px) {
+    head {
+        width: 380px;
+        max-width: 100%;
+    }
+    .central{
+        display: block;
+        visibility: visible;
+    }
+    
+    #nav-header {
+        display: none;
+        visibility: collapse;
+    }
+
+
+    /* ################################################## */
+    /* ################# TELA INICIAL ################### */
+    #home {
+        display: inline-block;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #home div h2 {
+        text-align: start;
+        font-size: 45px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #home div div p {
+        padding: 5%;
+    }
+    
+    .img-home {
+        padding: 0%;
+        width: 100%;
+        
+    }
+
+    /* ################################################## */
+    /* ####################### ABOUT #################### */
+    
+    #about {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #about article h2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* ################################################ */
+    /* ################### SERVIÇOS ################### */
+
+    #services {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #services h2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #div-price{
+        padding: 5%;
+        overflow: hidden;   
+    }
+
+    .box-new{
+        width: 100%;
+    }
+
+    /* ######################################################### */
+    /* ################### tabela perfomance ################### */
+
+    #performance{
+        padding: 0px;
+    }
+
+    #performance article h2 {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .line0 {
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    /* ################################################## */
+    /* ################## SUPPORT ####################### */
+
+
+    .context-img-centralizar h3 {
+        text-align: center;
+        top: 0%;
+    }
+
+    .context-img-centralizar p {
+        text-align: center;
+        top: 36%;
+    }
+
+    .context-img-centralizar a {
+        bottom: 15%;
+    }
+
+    /* ####################################################### */
+    /* ###################### FORM ########################### */
+    #display-screen {
+        display: inline-block;
+        padding: 0px;
+    }
+
+    #size-screen-half {
+        padding: 0%;
+        width: 100%;
+    }
+
+    #size-screen-half form ol {
+        font-size: 25px;
+    }
+
+    #box-selection {
+        font-size: 25px;
+    }
+
+    textarea {
+        width: 90%;
+    }
+    
+    /* ################################################## */
+    /* ####################### FOOTER #3################# */
+    
+    footer {
+        display: block;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    footer nav ul{
+        padding: 0px;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+}

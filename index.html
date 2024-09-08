@@ -26,6 +26,21 @@
             <a id="nav-opc4" class="nav-opc" href="#contact">Contato</a>
             
         </nav>
+        
+        <div class="central">
+            <div class="menu">
+                <img id="img-context" src="../img/list.png" width="30" alt="">
+            </div>
+
+        
+            <ul class="nav">
+                <li class="nav-context"><a href="#home">Início</a></li>
+                <li class="nav-context"><a href="#about">Sobre</a></li>
+                <li class="nav-context"><a href="#services">Serviços</a></li>
+                <li class="nav-context"><a href="#contact">Contato</a></li>
+            </ul>
+                
+        </div>
 
     </header>
 
@@ -42,7 +57,7 @@
             </div>
             <img src="img/undraw_hello_re_3evm.svg"  class="img-home" alt="">
             <!-- <div class="spacer"></div> -->
-            
+
         </section>
 
         <!-- seção sobre a empresa -->
@@ -211,11 +226,11 @@
                         </tr>
 
                         <tr>
-                            <th>Marços</th>
-                            <th>160</th>
-                            <th>148</th>
-                            <th>12</th>
-                            <th>92,5%</th>
+                            <th class="line1">Marços</th>
+                            <th class="line1">160</th>
+                            <th class="line1">148</th>
+                            <th class="line1">12</th>
+                            <th class="line1">92,5%</th>
                         </tr>
 
                         <tr>
@@ -227,11 +242,11 @@
                         </tr>
 
                         <tr>
-                            <th>Maio</th>
-                            <th>180</th>
-                            <th>162</th>
-                            <th>18</th>
-                            <th>90%</th>
+                            <th class="line1">Maio</th>
+                            <th class="line1">180</th>
+                            <th class="line1">162</th>
+                            <th class="line1">18</th>
+                            <th class="line1">90%</th>
                         </tr>
 
                         <tr>
@@ -243,10 +258,10 @@
                         </tr>
                     </tbody>
 
-                    <tfoot>
+                    <tfoot > 
                         <tr>
-                            <th>Num. de Total de Clientes</th>
-                            <th>XXX</th>
+                            <th scope="row" colspan="4" >Média do Índice de Satisfação</th>
+                            <th id="th-ri">XXX</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -255,100 +270,103 @@
         
         <br>
 
-        <section>
+        <section class="support">
             <article>
-                <h3>Quer falar com a gente?</h3>
-                <p>Envie sua mensagem pelo formulário <br>aperte em <b><a href="entrar_contato.html" target="meu-iframe">Entrar em Contato</a></b> para combinarmos um cafézinho online</p>
-                <iframe src="" frameborder="0" name="meu-iframe" title="Iframe de exemplo" height="20" width="100%"></iframe>
+                <!-- <img src= alt=""> -->
+                <div class="context-img"></div>
+                <div class="context-img-centralizar">
+                    <h3>Quer falar com a gente?</h3>
+                    <p>Envie sua mensagem</p>
+                    <p><br><br>Aperte em <b>Entrar em Contato</b> para combinarmos um cafézinho online</p>
+                    <a href="entrar_contato.html" target="meu-iframe">Entrar em Contato</a>
+                </div>
+                <!-- <iframe src="" frameborder="0" name="meu-iframe" title="Iframe de exemplo" height="20" width="100%"></iframe> -->
             </article>
         </section>
 
         <section>
-            <article>
-                <form action="" method="get">
-                    <ol>
-                        <li>
+            <article id="display-screen">
+                <div id="size-screen-half">
+                    <h2 class="libre-baskerville-bold font-size-title" >FAÇA A SUA AVALIAÇÃO</h2>
+                    <form action="" method="get" class="libre-baskerville-regular">
+                        <ol > 
 
-                            <h4>Como você avalia o atendimento da Webjobs?</h4>
-                            <label><input type="radio" name="QT1" value="Q1-Excelente">Excelente</label>
-                            <br>
-                            <label><input type="radio" name="QT1" value="Q1-Bom">Bom</label>
-                            <br>
-                            <label><input type="radio" name="QT1" value="Q1-Regular">Regular</label>
-                            <br>
-                            <label><input type="radio" name="QT1" value="Q1-Ruim">Ruim</label>
+                            <!-- <div class="box-form"></div> -->
 
-                        </li>
-
-                        <li>
-
-                            <h4>Quais serviços você utilizou?</h4>
-                            <label><input type="checkbox" name="QT2" value="DW">Desenvolvimento de Websites</label>
-                            <br>
-                            <label><input type="checkbox" name="QT2" value="GMS">Gestão de Mídias Sociais</label>
-                            <br>
-                            <label><input type="checkbox" name="QT2" value="DE">Desenvolvimento de E-commerce</label>           
-
-                        </li>
-
-                        <li>
+                            <li>
+                                <h4>Como você avalia o atendimento da Webjobs?</h4>
+                                <label><input type="radio" name="QT1" value="Q1-Excelente">Excelente</label>
+                                <br>
+                                <label><input type="radio" name="QT1" value="Q1-Bom">Bom</label>
+                                <br>
+                                <label><input type="radio" name="QT1" value="Q1-Regular">Regular</label>
+                                <br>
+                                <label><input type="radio" name="QT1" value="Q1-Ruim">Ruim</label>
+    
+                            </li>
+                            <div class="box-form"></div>
+                            
+                            <li>
+    
+                                <h4>Quais serviços você utilizou?</h4>
+                                <label><input type="checkbox" name="QT2" value="DW">Desenvolvimento de Websites</label>
+                                <br>
+                                <label><input type="checkbox" name="QT2" value="GMS">Gestão de Mídias Sociais</label>
+                                <br>
+                                <label><input type="checkbox" name="QT2" value="DE">Desenvolvimento de E-commerce</label>           
+    
+                            </li>
+                            <div class="box-form"></div>
+                            
+                            <li>
+                            
+                                <h4>Você recomendaria a Webjobs para outras pessoas?</h4>
+                                <label><input type="radio" name="QT3" value="Sim">Sim</label>
+                                <br>
+                                <label><input type="radio" name="QT3" value="Não">Não</label>
+                            
+                            </li>
+                            <div class="box-form"></div>
+    
+                            <li>
+    
+                                <h4>Qual a sua satisfação geral com os serviços prestados?</h4>
+                                <select id="box-selection" name="nivel-satisfação">
+    
+                                    <option value="" selected disabled >Selecione uma opção</option>
+                                    <option value="MS">Muito satisfeito</option>
+                                    <option value="S">Satisfeito</option>
+                                    <option value="Id">Indiferente</option>
+                                    <option value="Is">Insatisfeito</option>
+                                    <option value="MI">Muito insatisfeito</option>
+    
+                                </select>
+    
+                            </li>
+                            <div class="box-form"></div>
+    
+                            <li>
+                                <h4>Você deseja fazer alguma sugestão de melhoria?</h4>
+                                <textarea name="sugestão" id="" rows="8" cols="55"></textarea>
+                            </li>
+                            <div class="box-form"></div>
+    
+                        </ol>
                         
-                            <h4>Você recomendaria a Webjobs para outras pessoas?</h4>
-                            <label><input type="radio" name="QT3" value="Sim">Sim</label>
-                            <br>
-                            <label><input type="radio" name="QT3" value="Não">Não</label>
-                        
-                        </li>
-
-                        <li>
-
-                            <h4>Qual a sua satisfação geral com os serviços prestados?</h4>
-                            <select name="nivel-satisfação">
-
-                                <option value="" selected disabled >Selecione uma opção</option>
-                                <option value="MS">Muito satisfeito</option>
-                                <option value="S">Satisfeito</option>
-                                <option value="Id">Indiferente</option>
-                                <option value="Is">Insatisfeito</option>
-                                <option value="MI">Muito insatisfeito</option>
-
-                            </select>
-
-                        </li>
-
-                        <li>
-                            <h4>Você deseja fazer alguma sugestão de melhoria?</h4>
-                            <textarea name="sugestão" id="" rows="8" cols="55"></textarea>
-                        </li>
-
-                    </ol>
-
-                    <input type="submit" value="Enviar">
-
-                </form>
-            </article>
-        </section>
-
-        <!-- Barra lateral com links relacionados -->
-        <aside>
-            <h3><img src="img/globe.png" alt="" height="15"> Links Relacionados</h3>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-
+                        <div id="input-context">
+                            <input class="button-busy" type="submit" value="Enviar">
+                        </div>
+    
+                    </form>
+                </div>
+                <div id="size-screen-half">
+                    <img src="img/undraw_join_re_w1lh.svg" width="100%" alt="">
+                </div>
             
-            <h3><img src="img/headset.png" alt="Música" width="18"> Música</h3>
-            <!-- <audio src="audio/Taylor-Swift-Enchanted.mp3" autoplay loop></audio> -->
-            <!-- <audio controls autoplay> -->
-            <audio controls>
-                <!-- <source src="horse.ogg" type="audio/ogg"> -->
-                <source src="audio/Taylor-Swift-Enchanted.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
-            <!-- <audio src="audio/Taylor-Swift-Enchanted.mp3" controls controlsList="nodownload" loop></audio> -->
-        </aside>
+            </article>
+        </section>
+
+        
 
     </main>
     <hr>
@@ -356,18 +374,18 @@
     <!-- Rodapé do site -->
     <footer>
         
-        <p><strong>Copyright</strong> © 2024 Meu Website - Todos os direitos reservados.</p>
-
+        
         <nav>
-
+            
             <ul>
                 <li><a href="#privacy">Política de Privacidade</a></li>
                 <li><a href="#terms">Termos de Uso</a></li>
-
+                
             </ul>
-
+            
         </nav>
-
+        
+        <p><strong>Copyright</strong> © 2024 Meu Website - Todos os direitos reservados.</p>
     </footer>
 
 </body>
