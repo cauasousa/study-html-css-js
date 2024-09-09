@@ -1,0 +1,82 @@
+:root {
+    --cor-default: #ffffff;
+    --color-background: #F2E7DC;
+    --color-primary: #027373;
+    --color-secondary: #038C7F;
+    --color-accent: #A9D9D0;
+    --color-text: #0D0D0D;
+}
+
+/* ################################################ */
+/* ################### SERVIÇOS ################### */
+
+#services {
+    padding: 3% 5% 2% 5%;
+}
+
+#services h2 {
+    font-size: 22px;
+    text-align: justify;
+}
+
+#div-price{
+    display: inline-block;
+    overflow: auto;   
+    text-align: center;
+}
+
+.box-new{
+    display: inline-block;
+    flex: 0 0 block;
+    width: 420px;
+    margin: 10px 5px;
+    -webkit-box-shadow: 11px 15px 10px -10px rgba(242,231,220,1);
+    -moz-box-shadow: 11px 15px 10px -10px rgba(242,231,220,1);
+    box-shadow: 11px 15px 10px -10px rgba(242,231,220,1);
+}
+
+.box-price {
+    padding: 25px;
+}
+
+.box-price p {
+    text-align: justify;
+}
+
+.img-width{
+    width: 100%;
+}
+
+#color-img-price {
+    background: var(--color-accent);
+}
+
+.button-busy {
+    width: 150px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-busy p {
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+
+#centralizar {
+    text-decoration: none;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.button-busy:hover{
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
+}

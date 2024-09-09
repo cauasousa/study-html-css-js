@@ -1,0 +1,43 @@
+:root {
+    --cor-default: #ffffff;
+    --color-background: #F2E7DC;
+    --color-primary: #027373;
+    --color-secondary: #038C7F;
+    --color-accent: #A9D9D0;
+    --color-text: #0D0D0D;
+}
+
+/* ################################################## */
+/* ################# TELA INICIAL ################### */
+#home {
+    display: flex;
+    background-image: linear-gradient(45deg, var(--color-text),var(--color-text), #212121, #3f3f3f, #6f6f6f);    
+    max-height: 500px;
+    padding: 2% 5% 5% 5%;
+    height: 100vh;
+}
+
+.img-home {
+    padding: 5%;
+    max-width:500px;
+}
+
+#home h2 {
+    align-self: center;
+    color: white;
+    font-size: 55px;
+}
+
+#home p{
+    color: white;
+    align-items: center;
+    align-self: center;
+    font-size: 18px;
+    padding: 5px 15px 15px 0px;
+    text-align: justify;
+}
+
+#home b {
+    color: var(--color-secondary);
+    font-weight: 900;
+}

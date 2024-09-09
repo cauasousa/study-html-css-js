@@ -1,0 +1,51 @@
+/* ######################################################### */
+/* ################### tabela perfomance ################### */
+
+#performance{
+    padding: 3% 5% 2% 5%;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 11px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 11px -8px rgba(0,0,0,1);
+    box-shadow: 0px 0px 11px -8px rgba(0,0,0,1);
+}
+
+.line0 {
+    background: #0D0D0D;
+    border-color: #0D0D0D;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.line1 {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+.line2 {
+    background: #36BFB1;
+    border-color: #36BFB1;
+}
+
+tr:hover .line1 {
+    background: #591C21;
+    border-color: #591C21;
+    color: #ffffff;
+}
+
+tr:hover .line2 {
+    background: #591C21;
+    border-color: #591C21;
+    color: #ffffff;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+#th-ri {
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+:root {
+    --cor-default: #ffffff;
+    --color-background: #F2E7DC;
+    --color-primary: #027373;
+    --color-secondary: #038C7F;
+    --color-accent: #A9D9D0;
+    --color-text: #0D0D0D;
+}
+
+/* ################################################## */
+/* #################### FOOTER ###################### */
+footer {
+    background: var(--color-text);
+    display: flex;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+footer nav ul{
+    display: flex;
+}
+
+footer nav ul  li a{
+    display: flex;
+    list-style-type: none;
+    color: blue;
+    padding-left: 20px;
+}

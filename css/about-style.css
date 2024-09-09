@@ -1,0 +1,66 @@
+/* ################################################ */
+/* ################# TELA SOBRE NÓS ################### */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.libre-baskerville-bold {
+font-family: "Libre Baskerville", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+font-family: "Libre Baskerville", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+
+#about {
+    padding: 3% 5% 2% 5%;
+    font-size: 18px;
+    color: var(--color-text);
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+#about h2 {
+    font-weight: 900;
+    font-size: 32px;
+}
+.div-about {
+    display: flex;
+    padding: 20px;
+    column-gap: 15px;
+    overflow-x: auto;
+}
+
+.box-swic {
+    flex: 0 0 auto;
+    width: 330px;
+    -webkit-box-shadow: 13px 14px 8px -14px rgba(169,217,208,1);
+    -moz-box-shadow: 13px 14px 8px -14px rgba(169,217,208,1);
+    box-shadow: 13px 14px 8px -14px rgba(169,217,208,1);
+}
+
+.div-about-context{
+    color: var(--color-text);
+    padding: 20px;
+}
+
+.color-img-about {
+    background: var(--color-primary);
+    float: inline-end;
+}
+
+.box-swic:hover{
+    -webkit-box-shadow: 0px 0px 11px 8px rgba(169,217,208,1);
+    -moz-box-shadow: 0px 0px 11px 8px rgba(169,217,208,1);
+    box-shadow: 0px 0px 11px 8px rgba(169,217,208,1);
+}
