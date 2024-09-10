@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-font: #180F4A;
+    --color-1: #FF2978;
+    --color-2: #180F4A;
+    --color-default: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: var(--color-default);
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.logo h1 {
+    font-family: "Lobster", sans-serif;
+    color: var(--color-font);
+    font-size: 34px;
+    text-align: start;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-font);
+    padding: 20px 16px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    border-top: 4px solid var(--color-font);
+    color: var(--color-1);
+}
+
+#button-contact {
+    padding: 10px 25px;
+    color: var(--color-default);
+    background: var(--color-2);
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#button-contact:hover {
+    background: var(--color-1);
+    border: none;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.div-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    flex-flow: row wrap;
+    
+}
+
+.div-home-context {
+    flex: 40%;
+    margin-left: 10%;
+    display: inline-block;
+    text-align: left;
+}
+
+.div-home-context h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.div-home-context p {
+    text-align: justify;
+}
+
+.spacing-text {
+    color: var(--color-font);
+    letter-spacing: 15px;
+}
+
+.format-title-home {
+    font-size: 80px;
+    color: var(--color-font);
+}
+
+
+.button-contact-page-home {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-default);
+    background: var(--color-1);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.button-contact-page-home:hover {
+    background: var(--color-font);
+}
+
+.div-home-img {
+    flex: 40%;
+    margin-right: 10%;
+}
+
+.div-home-img img {
+    width: 100%;
+}
+
+.box-services {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+.box-services h2 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 80px;
+    font-size: 50px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: var(--color-font);
+}
+
+.divs-services-cards {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid var(--color-1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-text-oculto {
+    display: none;
+}
+
+.card:hover {
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    background: var(--color-1);
+    color: var(--color-default);
+    padding: 40px;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover .card-text-oculto {
+    display: block;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, var(--color-font), #090420, black);
+    margin-top: 100px;
+    text-align: center;
+    border-top: 5px solid var(--color-1);
+} 
+
+footer b {
+    color: var(--color-default);
+}
+
+.logo-rodape {
+    padding: 120px;
+}
+
+.agencia {
+    font-family: "Lobster", sans-serif;
+    color: var(--color-default);
+    font-size: 34px;
+
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
+
+.centralizar b {
+    height: 100%;
+    max-height: 100%;
+}
+
+footer img {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    width: 90px;
+}

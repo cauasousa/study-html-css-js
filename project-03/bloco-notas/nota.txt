@@ -4,6 +4,8 @@ paleta de cores -> https://color.adobe.com/explore
 icone -> https://www.flaticon.com/
 joguinho -> https://flexboxfroggy.com/#pt-br
 site das sombras -> https://www.cssmatic.com/box-shadow 
+freepik e pixels -> images
+
 
 ######### os tamanhos das telas #########
 /* Smartphones (600px para baixo) */
@@ -76,6 +78,15 @@ inline  -- ele fica organizado em formato de linha. Obs.: algumas propriedades n
 block   -- ele fica organizado em formato de coluna
 inline-block -- ele fica organizado em formato de linha, porém usa propriedades do block, aceitando algumas funcionalidades de width
 
+FLEX - ele tem os dois, direction - row column. 
+flex-flow: row wrap  -> wrap para dizer o comportamente é de deixar dentro da tela
+justify-context: flex-end alinha na horizontal
+align-itens: alinha na vertical
+align-content: alinha o grupo todo,, mesmo q itens
+flex-grow: o crescimento da div filho, na div filho ->   1 - uniforme
+box-sizing: border-box -> padrão pra margem e sei lá
+flex: dizer o tamanho das divs filho
+
 display:     ele oculta da tela, não ocupa espaço 
 visibility: hidden;      ele oculta da tela, porém continua ocupando espaço 
 
@@ -106,3 +117,11 @@ Float: left ... vai colocar o conteúdo(ex.: imagem) no lado esquerdo
 clear:both; -> esse parâmetro ele meio que diz que apartir daquele elemento vai pular o float e colocar o restante do conteúdo em baixo
 Interessante que ele tem preferência pra colocar esse elemento primeiro, 
 
+
+transition-property: all;
+transition-duration: 2s;
+transition-timing-function: ease-out;
+transition-delay: 0s;
+completo -> transition: all 2s ease-out 0;
+
+transform: translateX(400px);
