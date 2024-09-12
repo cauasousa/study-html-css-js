@@ -1,0 +1,141 @@
+<script src=""><\script> sempre no final do body
+.innerHTML
+
+Inseriri texto: 
+1 jeito: document.getElementById("MSG").innerHTML = "Mensagem <b>JS</b>";
+2 jeito: document.write("MSG");
+3 jeito: console.log("no console");
+4 jeito: alert("MSG");
+
+let a, b, c; a=5; b=6; c=7;    -> só pode declarar uma vez
+var a = 5;                     -> pode declarar mais de uma vez, universal
+const a = 0;                   -> não recebe mais nenhum valor
+function minhafuncao() {}
+
+
+comparação de tipy valor1 === valor2    (===     !==   )
+operador ternaril  (idade<18) ? "Não" : "Sim";
+
+- Class -
+class Carro {
+    constructor(valor1, valor2, valor3) {
+        this.marca = valor1;
+        this.modelo = valor2;
+        this.ano = valor3;
+    }
+
+    function(){}
+}
+
+const uno = new Carro("Fiat", "Uno", 2001);
+
+
+- jeito diferente de fzr um Objeto -
+const carro = {
+    marca: "ford",
+    modelo: "ka",
+    ano: 2025, 
+    placa: "ABC-1234",
+    buzina: function () { alert('Biiiiiii')},
+    completo: function () {
+        return "A marca é " + this.marca + "e o modelo é: " + this.modelo;
+    }
+};
+
+console.log(carro.completo());
+
+_________ JSON _________
+
+JSON.parse() -> Converte texto no padrão JSON em objetos.
+JSON.stringify() -> Converte objetos em texto padrão JSON.
+
+________________________
+
+
+
+- Arrays -
+const lista = ["Arroz", "feijão", "macarrão"];
+const lista = new Array("Arroz", "feijão", "macarrão");
+lista.length
+lista.push("ADD")
+lista.pop()
+console.log(lista[0]) // "Arroz".
+Array.isArray(lista) // true.
+Join("-") -> Retorna meio que uma lista Camisa-Calção-Vestido.
+push -> insere no fim.
+shift -> remove o primeiro elemento.
+unshif -> insere no início .
+pop -> remove o elemento.
+delete -> delete lista[0]; ele remove mais coloca um undefined.
+splice -> lista.splice(1, 0, "AdD', "add2") insere em uma posição, pode tbm remover e subtituir.
+concat -> concatena, quantass listas quiser.
+slice -> cortar uma parte da matriz.
+sort -> ordena em ordem alfabetica.
+reverse ->
+sorte(function(a,b) {return a - b}) em ordem númerica.
+return Math.max.apply(null, array) -> retorna o maior número.
+return Math.min.apply(null, array) -> retorna o menor número.
+array.filter((value,  index, array){return value > 20});
+
+if else
+swith(expressao){case a: break;}
+for (let i=0; i < 100; i++) {}
+
+
+- Eventos de Tempo -
+setTimeout(function, tempo em milisegundos)
+-> Executa uma  função, depois de esperar um número especificado de milissegundos.
+Ex.: tempo = setTimeout();     
+posso parar usando: clearTimeout(tempo);
+
+setInterval(function, miliseconds)
+-> É o mesmo que setTimeout(), mas repete a execução da função continuamente.
+Ex.: tempo = setInterval();
+     clearInterval(tempo);
+
+- Evento - 
+onclick -> Disparado quando recebe um click.
+onblclick -> Disparado quando clique duplo.
+onmouseover -> Disparado quando o mouse está sobre.
+onmouseout -> Disparado quando o mouse é movido para fora do elemento.
+onmousemove -> Disparado quando o mouse é movido no elemento.
+onmousedown -> Disparado quando o clique do botão foi pressionado.
+onmouseseup -> Disparado quando o clique do botão é liberado.
+onfocus -> Disparado quando o elemento recebe o foco. Válido para input,  
+onchange -> Disparado quando existe uma mudança no conteúdo. "Ao mudar". Input
+onblur -> Disparado quando o elemento perde o foco.
+onkeydown -> Disparado quando uma tecla é pressionada. 
+onkeypress -> Disparado quando uma tecla é pressionada e solta.
+onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
+onload -> Disparado quando a página terminou de ser carregada. Body.
+onresive -> Disparado quando há um redimencionamento da janela  
+
+- Date -
+let data = new Date();
+let ano = data.getFullYear();
+let mes = data.getMonth(); // 0 janeiro - 11 dezembro
+let dia = data.getDate();
+let diaSemana = data.getDay(); // 0 domingo até 6 sábado
+let hora = data.getHours(); 
+let minutos = data.getMinutes();
+let secund = data.getSeconds();
+let milisecund = getMiliseconds();
+
+let dataBR = data.toLocaleString('pt-BR', {dataStyle:'short'}); // dataStyle só a data, timeStyle é só a hora
+comparação com data 
+    vencimento = new Date(2022, 0, 15);
+    hoje = new Date();
+    if(hoje > vencimento){
+        console.log("Sua conta venceu);
+    }
+
+
+- Requisição -
+const ajax = new XMLHttpRequest();
+ajax.open('GET', 'https://viacep.com.br/ws/68888545/json/');
+ajax.send();
+
+ajax.onload = function () {
+    document.getElementById('area').innerHTML = this.responseText;
+}
+
